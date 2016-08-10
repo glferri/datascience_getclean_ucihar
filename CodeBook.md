@@ -7,6 +7,7 @@ The dataset first 2 columns represent the subject and activity couples for which
 **cathegorical**
 
 subject: the subject performing the experiment
+
 activity: the type of activity that was accomplished during measurement
 
 **numerical**
@@ -18,22 +19,27 @@ Variable names are constructed using the following conventions:
 **domain**
 
 timeDomain indicates that the measurement is obtained from time domain data
+
 freqDomain indicates that the measurement is obtained from frequency domain data (after appling FFT to time domain data)
 
 **acceleration type**
 
 Body indicates body acceleration
+
 Gravity indicates gravity acceleration (for accelerometer data)
 
 **source**
 
 Accelerometer indicates data obtained from accelerometer data
+
 Gyroscope indicates data obtained from Gyroscope data
 
 **data extracted**
 
 Mean: mean of data
+
 Std: standard deviation of data
+
 meanFreq: mean frequency, for frequency domain data
 
 **Jerk**
@@ -43,6 +49,7 @@ Jerk indicates the Jerk feature is extracted
 **axis, or magnitude**
 
 X,Y,Z: axis for data in vector form
+
 Magnitude: indicates the euclidean magnitude is computed for vector data before appling mean or std
 
 **note**: it is unclear what BodyBody variables represent.
