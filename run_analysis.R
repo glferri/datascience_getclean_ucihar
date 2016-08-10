@@ -68,7 +68,7 @@ colnames(merged_x_shrinked) <- required_features$cleanlabel
 write.table(required_features, "feature_list.txt", row.names = FALSE)
 
 #ADD ACTIVITY NAMES TO merged_y
-merged_y <- merge(activity_labels_tab, merged_y, by.x = "id", by.y = "V1")
+merged_y$label <- activity_labels_tab$label[merged_y$V1]
 
 #create complete dataframe with subjects and activities
 fulldataset <- cbind(merged_x_shrinked, factor(merged_subject$V1), merged_y$label)
