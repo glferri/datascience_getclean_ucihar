@@ -8,7 +8,14 @@ The script produces the file tidy.txt, containing the mean for the mean and stan
 Refer to [CodeBook.md](CodeBook.md) for information on the variables of the intermediate and tidy dataset.
 
 ## Running
-The script can be run on a clean directory: it downloads the dataset in its working directory on a file called Dataset.zip, then unzip it into the zip default directory "UCI HAR Dataset".
+Required packages: dplyr
+make shure you install the required packages using
+
+```r
+install.packages("dplyr")
+```
+
+The script can be run on a clean directory: it downloads the dataset in the current working directory, on a file called `UCI HAR Dataset.zip`, then unzips it into the zip default directory `UCI HAR Dataset`.
 
 If either Dataset.zip or UCI HAR Dataset are present, the first steps are skipped.
 The output data set is tidy.txt in the working directory.
